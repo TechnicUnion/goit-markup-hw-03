@@ -8,10 +8,29 @@
   --accent-color: #2196f3;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
   background-color: var(--main-background-color);
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -39,8 +58,31 @@ body {
   margin: -1px;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
 /* -----------INDEX.HTML------------- */
 /* --------HEADER------- */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -49,6 +91,16 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: inherit;
+  margin-right: 93px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -68,6 +120,12 @@ body {
   color: var(--accent-color);
 }
 
+.header-address-list {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
 .header-address-link {
   font-weight: 500;
   font-size: 14px;
@@ -75,6 +133,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
 .header-address-link:hover,
 .header-address-link:focus {
   color: var(--accent-color);
@@ -84,6 +143,8 @@ body {
 
 .hero {
   background: var(--second-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -94,6 +155,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-text-color);
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 
 .hero-btn {
@@ -101,9 +164,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   background-color: var(--accent-color);
@@ -111,6 +171,8 @@ body {
   border: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  display: block;
 }
 
 .hero-btn:hover,
@@ -120,11 +182,28 @@ body {
 
 /* ------------BENEFITS-------------- */
 
+.benefits {
+  padding-top: 94px;
+}
+
+.benefits-list {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.benefits-item {
+  max-width: 270px;
+  flex-basis: calc(100% / 4 - 30);
+  margin-left: 30px;
+}
+
 .benefits-item-titel {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .benefets-item-text {
   font-size: 14px;
@@ -135,11 +214,27 @@ body {
 
 /* ------------OFFERS-------------- */
 
+.offers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .offers-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.offers-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.offers-item {
+  flex-basis: calc((100%-90px) / 3);
+  margin-left: 30px;
 }
 
 /* -----------TEAM----------- */
