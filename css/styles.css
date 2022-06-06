@@ -343,6 +343,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -358,7 +359,6 @@ img {
   color: inherit;
   cursor: pointer;
   padding: 6px 22px;
-  margin-bottom: 50px;
 }
 
 .portfolio-btn.current {
