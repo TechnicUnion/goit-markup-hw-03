@@ -76,8 +76,6 @@ img {
 /* --------HEADER------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -98,6 +96,8 @@ img {
   letter-spacing: 0.03em;
   color: inherit;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-list {
@@ -115,6 +115,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link.current {
@@ -138,6 +140,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-address-link:hover,
@@ -189,10 +193,6 @@ img {
 
 /* ------------BENEFITS-------------- */
 
-.benefits {
-  padding-bottom: 0;
-}
-
 .benefits-list {
   display: flex;
   align-items: center;
@@ -220,6 +220,9 @@ img {
 }
 
 /* ------------OFFERS-------------- */
+.offers {
+  padding-top: 0;
+}
 
 .offers-title {
   font-size: 36px;
@@ -267,13 +270,18 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin: 30px auto 10px;
+  margin-bottom: 10px;
 }
 
 .team-item-text {
@@ -281,7 +289,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 30px;
 }
 
 /* -----------FOOTER---------- */
@@ -303,6 +310,7 @@ img {
 
 .footer-address {
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer-adddres-text {
@@ -310,7 +318,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  margin-top: 20px;
   margin-bottom: 9px;
 }
 
