@@ -131,7 +131,11 @@ img {
 .header-address-list {
   display: flex;
   margin-left: auto;
-  gap: 50px;
+  /* gap: 50px; */
+}
+
+.header-address-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header-address-link {
@@ -342,8 +346,12 @@ img {
 .portfolio-btn-list {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  /* gap: 8px; */
   margin-bottom: 50px;
+}
+
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-btn {
